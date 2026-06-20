@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Enterprise AI Decision Intelligence Copilot platform architecture">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 14px Arial, sans-serif; fill: #475569; }
+      .label { font: 700 16px Arial, sans-serif; fill: #0f172a; }
+      .body { font: 400 13px Arial, sans-serif; fill: #0f172a; }
+      .small { font: 400 12px Arial, sans-serif; fill: #334155; }
+      .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 1.5; rx: 16; ry: 16; }
+      .line { stroke: #475569; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .pill { fill: #e2e8f0; stroke: #cbd5e1; stroke-width: 1; rx: 999; ry: 999; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="1000" fill="url(#bg)"/>
+
+  <text x="800" y="44" text-anchor="middle" class="title">Enterprise AI Decision Intelligence Copilot</text>
+  <text x="800" y="68" text-anchor="middle" class="subtitle">Platform architecture rendered as SVG for the internal engineering handbook</text>
+
+  <rect x="60" y="110" width="150" height="72" class="box" fill="#dbeafe"/>
+  <text x="135" y="140" text-anchor="middle" class="label">User</text>
+  <text x="135" y="160" text-anchor="middle" class="small">Analyst / DS / ML / AI</text>
+
+  <rect x="250" y="96" width="220" height="100" class="box" fill="#e0f2fe"/>
+  <text x="360" y="126" text-anchor="middle" class="label">Frontend</text>
+  <text x="360" y="148" text-anchor="middle" class="small">React + TypeScript</text>
+  <text x="360" y="168" text-anchor="middle" class="small">Dashboards, chat, forms</text>
+
+  <rect x="530" y="96" width="220" height="100" class="box" fill="#ede9fe"/>
+  <text x="640" y="126" text-anchor="middle" class="label">API Gateway</text>
+  <text x="640" y="148" text-anchor="middle" class="small">Rate limiting</text>
+  <text x="640" y="168" text-anchor="middle" class="small">API versioning</text>
+
+  <rect x="810" y="90" width="310" height="112" class="box" fill="#ddd6fe"/>
+  <text x="965" y="122" text-anchor="middle" class="label">FastAPI Backend</text>
+  <text x="965" y="144" text-anchor="middle" class="small">Business logic, orchestration, validation</text>
+  <text x="965" y="164" text-anchor="middle" class="small">Service and repository layers</text>
+
+  <line x1="210" y1="146" x2="250" y2="146" class="line"/>
+  <line x1="470" y1="146" x2="530" y2="146" class="line"/>
+  <line x1="750" y1="146" x2="810" y2="146" class="line"/>
+
+  <line x1="965" y1="202" x2="965" y2="240" class="line"/>
+  <line x1="965" y1="240" x2="240" y2="240" class="line"/>
+
+  <rect x="70" y="260" width="450" height="220" class="box" fill="#f8fafc"/>
+  <rect x="580" y="260" width="450" height="220" class="box" fill="#f8fafc"/>
+  <rect x="1090" y="260" width="450" height="220" class="box" fill="#f8fafc"/>
+
+  <rect x="70" y="260" width="450" height="36" class="pill"/>
+  <text x="295" y="284" text-anchor="middle" class="label">Access and Governance</text>
+  <text x="115" y="328" class="body">Authentication</text>
+  <text x="115" y="352" class="body">JWT and OAuth</text>
+  <text x="115" y="376" class="body">RBAC and roles</text>
+  <text x="115" y="400" class="body">Multi-tenant isolation</text>
+  <text x="115" y="424" class="body">Row-level security</text>
+  <text x="115" y="448" class="body">Audit logs and policies</text>
+
+  <rect x="580" y="260" width="450" height="36" class="pill"/>
+  <text x="805" y="284" text-anchor="middle" class="label">Data Platform</text>
+  <text x="625" y="328" class="body">Dataset upload</text>
+  <text x="625" y="352" class="body">Validation with Pandera / GE</text>
+  <text x="625" y="376" class="body">PostgreSQL warehouse</text>
+  <text x="625" y="400" class="body">pgvector embeddings</text>
+  <text x="625" y="424" class="body">DuckDB profiling</text>
+  <text x="625" y="448" class="body">Object storage</text>
+
+  <rect x="1090" y="260" width="450" height="36" class="pill"/>
+  <text x="1315" y="284" text-anchor="middle" class="label">Analytics and Science</text>
+  <text x="1135" y="328" class="body">SQL metrics and dbt</text>
+  <text x="1135" y="352" class="body">KPI and cohort analysis</text>
+  <text x="1135" y="376" class="body">A/B testing and uplift</text>
+  <text x="1135" y="400" class="body">Recommendations</text>
+  <text x="1135" y="424" class="body">Forecasting and CLV</text>
+  <text x="1135" y="448" class="body">Business dashboards</text>
+
+  <rect x="70" y="560" width="450" height="220" class="box" fill="#f8fafc"/>
+  <rect x="580" y="560" width="450" height="220" class="box" fill="#f8fafc"/>
+  <rect x="1090" y="560" width="450" height="220" class="box" fill="#f8fafc"/>
+
+  <rect x="70" y="560" width="450" height="36" class="pill"/>
+  <text x="295" y="584" text-anchor="middle" class="label">ML Platform</text>
+  <text x="115" y="628" class="body">Feature store</text>
+  <text x="115" y="652" class="body">Training pipelines</text>
+  <text x="115" y="676" class="body">MLflow registry</text>
+  <text x="115" y="700" class="body">Model serving</text>
+  <text x="115" y="724" class="body">Batch and real-time inference</text>
+  <text x="115" y="748" class="body">Drift monitoring</text>
+
+  <rect x="580" y="560" width="450" height="36" class="pill"/>
+  <text x="805" y="584" text-anchor="middle" class="label">GenAI Platform</text>
+  <text x="625" y="628" class="body">Document parsing and chunking</text>
+  <text x="625" y="652" class="body">RAG and vector search</text>
+  <text x="625" y="676" class="body">LLM routing</text>
+  <text x="625" y="700" class="body">Guardrails and safe SQL</text>
+  <text x="625" y="724" class="body">Agents and memory</text>
+  <text x="625" y="748" class="body">Evaluation and feedback</text>
+
+  <rect x="1090" y="560" width="450" height="36" class="pill"/>
+  <text x="1315" y="584" text-anchor="middle" class="label">Operations</text>
+  <text x="1135" y="628" class="body">Kafka / Redpanda events</text>
+  <text x="1135" y="652" class="body">Prefect / Airflow / Temporal</text>
+  <text x="1135" y="676" class="body">Redis / Celery jobs</text>
+  <text x="1135" y="700" class="body">OpenTelemetry traces</text>
+  <text x="1135" y="724" class="body">Prometheus / Grafana</text>
+  <text x="1135" y="748" class="body">Cost, deployment, security</text>
+
+  <line x1="965" y1="202" x2="295" y2="260" class="line"/>
+  <line x1="965" y1="202" x2="805" y2="260" class="line"/>
+  <line x1="965" y1="202" x2="1315" y2="260" class="line"/>
+
+  <line x1="965" y1="202" x2="295" y2="560" class="line"/>
+  <line x1="965" y1="202" x2="805" y2="560" class="line"/>
+  <line x1="965" y1="202" x2="1315" y2="560" class="line"/>
+
+  <text x="800" y="830" text-anchor="middle" class="subtitle">The backend orchestrates all platform capabilities through secure, tenant-aware services and background workflows.</text>
+
+  <rect x="280" y="860" width="1040" height="70" class="box" fill="#f8fafc"/>
+  <text x="800" y="892" text-anchor="middle" class="label">End-to-End Data Flow</text>
+  <text x="800" y="916" text-anchor="middle" class="small">User input -> frontend -> gateway -> backend -> data, ML, GenAI, agents, evaluation, observability, and deployment controls</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="420" viewBox="0 0 1680 420" role="img" aria-label="Fine tuning architecture">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 16; ry: 16; }
+      .box2 { fill: #ecfeff; stroke: #0f766e; stroke-width: 2; rx: 16; ry: 16; }
+      .box3 { fill: #eff6ff; stroke: #1d4ed8; stroke-width: 2; rx: 16; ry: 16; }
+      .label { font: 600 19px Arial, sans-serif; fill: #0f172a; }
+      .sub { font: 14px Arial, sans-serif; fill: #334155; }
+      .arrow { stroke: #334155; stroke-width: 4; fill: none; marker-end: url(#arrowHead); }
+    </style>
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1680" height="420"/>
+
+  <rect class="box" x="40" y="130" width="220" height="120"/>
+  <text class="label" x="150" y="166" text-anchor="middle">Base Model</text>
+  <text class="sub" x="150" y="193" text-anchor="middle">hosted or local</text>
+  <text class="sub" x="150" y="214" text-anchor="middle">choose starting point</text>
+
+  <rect class="box" x="300" y="130" width="220" height="120"/>
+  <text class="label" x="410" y="166" text-anchor="middle">Training Data</text>
+  <text class="sub" x="410" y="193" text-anchor="middle">instruction pairs</text>
+  <text class="sub" x="410" y="214" text-anchor="middle">clean labels</text>
+
+  <rect class="box2" x="560" y="130" width="260" height="120"/>
+  <text class="label" x="690" y="166" text-anchor="middle">PEFT / LoRA / QLoRA</text>
+  <text class="sub" x="690" y="193" text-anchor="middle">adapter training</text>
+  <text class="sub" x="690" y="214" text-anchor="middle">4-bit or 8-bit weights</text>
+
+  <rect class="box3" x="860" y="130" width="220" height="120"/>
+  <text class="label" x="970" y="166" text-anchor="middle">Evaluation</text>
+  <text class="sub" x="970" y="193" text-anchor="middle">benchmark set</text>
+  <text class="sub" x="970" y="214" text-anchor="middle">quality, cost, latency</text>
+
+  <rect class="box" x="1120" y="130" width="220" height="120"/>
+  <text class="label" x="1230" y="166" text-anchor="middle">Registry</text>
+  <text class="sub" x="1230" y="193" text-anchor="middle">model card + adapter</text>
+  <text class="sub" x="1230" y="214" text-anchor="middle">versioned artifacts</text>
+
+  <rect class="box" x="1380" y="90" width="240" height="100"/>
+  <text class="label" x="1500" y="126" text-anchor="middle">Hosted Serving</text>
+  <text class="sub" x="1500" y="153" text-anchor="middle">OpenAI / Azure OpenAI</text>
+
+  <rect class="box" x="1380" y="220" width="240" height="100"/>
+  <text class="label" x="1500" y="256" text-anchor="middle">Local Serving</text>
+  <text class="sub" x="1500" y="283" text-anchor="middle">vLLM / TGI / Ollama</text>
+
+  <path class="arrow" d="M260 190 L300 190"/>
+  <path class="arrow" d="M520 190 L560 190"/>
+  <path class="arrow" d="M820 190 L860 190"/>
+  <path class="arrow" d="M1080 190 L1120 190"/>
+  <path class="arrow" d="M1340 190 L1380 140"/>
+  <path class="arrow" d="M1340 190 L1380 270"/>
+</svg>

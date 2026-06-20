@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="360" viewBox="0 0 1560 360" role="img" aria-label="Benchmarking pipeline">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 16; ry: 16; }
+      .box2 { fill: #fef9c3; stroke: #ca8a04; stroke-width: 2; rx: 16; ry: 16; }
+      .label { font: 600 20px Arial, sans-serif; fill: #0f172a; }
+      .sub { font: 14px Arial, sans-serif; fill: #334155; }
+      .arrow { stroke: #334155; stroke-width: 4; fill: none; marker-end: url(#arrowHead); }
+    </style>
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1560" height="360"/>
+
+  <rect class="box" x="40" y="110" width="220" height="120"/>
+  <text class="label" x="150" y="148" text-anchor="middle">Golden Set</text>
+  <text class="sub" x="150" y="175" text-anchor="middle">fixed inputs</text>
+  <text class="sub" x="150" y="196" text-anchor="middle">human-reviewed answers</text>
+
+  <rect class="box" x="300" y="110" width="220" height="120"/>
+  <text class="label" x="410" y="148" text-anchor="middle">Candidate Run</text>
+  <text class="sub" x="410" y="175" text-anchor="middle">model, prompt, agent</text>
+  <text class="sub" x="410" y="196" text-anchor="middle">same test cases</text>
+
+  <rect class="box2" x="560" y="110" width="240" height="120"/>
+  <text class="label" x="680" y="148" text-anchor="middle">Scorers</text>
+  <text class="sub" x="680" y="175" text-anchor="middle">automatic + rubric</text>
+  <text class="sub" x="680" y="196" text-anchor="middle">ML / RAG / LLM / agent</text>
+
+  <rect class="box" x="840" y="110" width="220" height="120"/>
+  <text class="label" x="950" y="148" text-anchor="middle">Human Review</text>
+  <text class="sub" x="950" y="175" text-anchor="middle">edge cases</text>
+  <text class="sub" x="950" y="196" text-anchor="middle">safety and usefulness</text>
+
+  <rect class="box" x="1100" y="110" width="220" height="120"/>
+  <text class="label" x="1210" y="148" text-anchor="middle">Compare</text>
+  <text class="sub" x="1210" y="175" text-anchor="middle">baseline vs candidate</text>
+  <text class="sub" x="1210" y="196" text-anchor="middle">delta, cost, latency</text>
+
+  <rect class="box" x="1360" y="110" width="160" height="120"/>
+  <text class="label" x="1440" y="148" text-anchor="middle">Gate</text>
+  <text class="sub" x="1440" y="175" text-anchor="middle">ship / fix / rollback</text>
+
+  <path class="arrow" d="M260 170 L300 170"/>
+  <path class="arrow" d="M520 170 L560 170"/>
+  <path class="arrow" d="M800 170 L840 170"/>
+  <path class="arrow" d="M1060 170 L1100 170"/>
+  <path class="arrow" d="M1320 170 L1360 170"/>
+</svg>

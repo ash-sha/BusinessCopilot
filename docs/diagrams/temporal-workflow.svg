@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="440" viewBox="0 0 1700 440" role="img" aria-label="Temporal workflow architecture">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 16; ry: 16; }
+      .box2 { fill: #eff6ff; stroke: #1d4ed8; stroke-width: 2; rx: 16; ry: 16; }
+      .box3 { fill: #f0fdf4; stroke: #15803d; stroke-width: 2; rx: 16; ry: 16; }
+      .label { font: 600 18px Arial, sans-serif; fill: #0f172a; }
+      .sub { font: 13px Arial, sans-serif; fill: #334155; }
+      .arrow { stroke: #334155; stroke-width: 4; fill: none; marker-end: url(#arrowHead); }
+    </style>
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1700" height="440"/>
+
+  <rect class="box" x="40" y="160" width="200" height="120"/>
+  <text class="label" x="140" y="196" text-anchor="middle">FastAPI / UI</text>
+  <text class="sub" x="140" y="223" text-anchor="middle">start workflow</text>
+
+  <rect class="box2" x="280" y="160" width="240" height="120"/>
+  <text class="label" x="400" y="196" text-anchor="middle">Temporal Server</text>
+  <text class="sub" x="400" y="223" text-anchor="middle">durable state, retries, history</text>
+
+  <rect class="box3" x="560" y="60" width="200" height="100"/>
+  <text class="label" x="660" y="98" text-anchor="middle">Activity A</text>
+  <text class="sub" x="660" y="123" text-anchor="middle">ingest / validate</text>
+
+  <rect class="box3" x="560" y="180" width="200" height="100"/>
+  <text class="label" x="660" y="218" text-anchor="middle">Activity B</text>
+  <text class="sub" x="660" y="243" text-anchor="middle">embed / train / query</text>
+
+  <rect class="box3" x="560" y="300" width="200" height="100"/>
+  <text class="label" x="660" y="338" text-anchor="middle">Activity C</text>
+  <text class="sub" x="660" y="363" text-anchor="middle">publish / notify</text>
+
+  <rect class="box" x="820" y="160" width="220" height="120"/>
+  <text class="label" x="930" y="196" text-anchor="middle">Worker Service</text>
+  <text class="sub" x="930" y="223" text-anchor="middle">executes activities</text>
+
+  <rect class="box" x="1080" y="60" width="220" height="100"/>
+  <text class="label" x="1190" y="98" text-anchor="middle">Signals</text>
+  <text class="sub" x="1190" y="123" text-anchor="middle">human approval / resume</text>
+
+  <rect class="box" x="1080" y="180" width="220" height="100"/>
+  <text class="label" x="1190" y="218" text-anchor="middle">Retries</text>
+  <text class="sub" x="1190" y="243" text-anchor="middle">timeouts / compensation</text>
+
+  <rect class="box" x="1080" y="300" width="220" height="100"/>
+  <text class="label" x="1190" y="338" text-anchor="middle">Downstream APIs</text>
+  <text class="sub" x="1190" y="363" text-anchor="middle">DB, RAG, ML, LLM</text>
+
+  <path class="arrow" d="M240 220 L280 220"/>
+  <path class="arrow" d="M520 220 L560 220"/>
+  <path class="arrow" d="M760 110 L820 190"/>
+  <path class="arrow" d="M760 230 L820 220"/>
+  <path class="arrow" d="M760 350 L820 250"/>
+  <path class="arrow" d="M1040 220 L1080 110"/>
+  <path class="arrow" d="M1040 220 L1080 230"/>
+  <path class="arrow" d="M1040 220 L1080 350"/>
+</svg>

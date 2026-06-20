@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="System architecture layers for the Enterprise AI Decision Intelligence Copilot">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/>
+    </marker>
+    <linearGradient id="bg2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 28px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 14px Arial, sans-serif; fill: #475569; }
+      .layer { fill: #ffffff; stroke: #94a3b8; stroke-width: 1.5; rx: 18; ry: 18; }
+      .band { fill: #e2e8f0; stroke: #cbd5e1; stroke-width: 1; rx: 999; ry: 999; }
+      .label { font: 700 16px Arial, sans-serif; fill: #0f172a; }
+      .body { font: 400 13px Arial, sans-serif; fill: #1e293b; }
+      .small { font: 400 12px Arial, sans-serif; fill: #475569; }
+      .line { stroke: #475569; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .chip { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1; rx: 999; ry: 999; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+
+  <text x="800" y="42" text-anchor="middle" class="title">System Architecture</text>
+  <text x="800" y="66" text-anchor="middle" class="subtitle">Layered view of the modular monolith and supporting platform services</text>
+
+  <rect x="80" y="110" width="1440" height="92" class="layer" fill="#dbeafe"/>
+  <rect x="80" y="110" width="210" height="36" class="band"/>
+  <text x="185" y="135" text-anchor="middle" class="label">Client Layer</text>
+  <text x="330" y="147" class="body">React frontend, TypeScript UI, charts, forms, chat, and admin screens</text>
+
+  <rect x="80" y="230" width="1440" height="92" class="layer" fill="#ede9fe"/>
+  <rect x="80" y="230" width="210" height="36" class="band"/>
+  <text x="185" y="255" text-anchor="middle" class="label">Access Layer</text>
+  <text x="330" y="267" class="body">API gateway, JWT, OAuth, RBAC, tenant resolution, and rate limiting</text>
+
+  <rect x="80" y="350" width="1440" height="116" class="layer" fill="#f5f3ff"/>
+  <rect x="80" y="350" width="260" height="36" class="band"/>
+  <text x="210" y="375" text-anchor="middle" class="label">Application Layer</text>
+  <text x="360" y="385" class="body">FastAPI backend, domain-pack engine, validation service, job manager, API orchestration</text>
+  <rect x="360" y="408" width="190" height="38" class="chip"/>
+  <text x="455" y="432" text-anchor="middle" class="small">Service / repository pattern</text>
+  <rect x="570" y="408" width="170" height="38" class="chip"/>
+  <text x="655" y="432" text-anchor="middle" class="small">Background jobs</text>
+  <rect x="760" y="408" width="190" height="38" class="chip"/>
+  <text x="855" y="432" text-anchor="middle" class="small">Workflow orchestration</text>
+  <rect x="970" y="408" width="180" height="38" class="chip"/>
+  <text x="1060" y="432" text-anchor="middle" class="small">Policy checks</text>
+
+  <rect x="80" y="500" width="1440" height="146" class="layer" fill="#ecfeff"/>
+  <rect x="80" y="500" width="220" height="36" class="band"/>
+  <text x="190" y="525" text-anchor="middle" class="label">Intelligence Layer</text>
+  <text x="360" y="536" class="body">Analytics, data science, ML, forecasting, RAG, agents, evaluation</text>
+  <rect x="360" y="558" width="170" height="38" class="chip"/>
+  <text x="445" y="582" text-anchor="middle" class="small">SQL and dbt</text>
+  <rect x="550" y="558" width="170" height="38" class="chip"/>
+  <text x="635" y="582" text-anchor="middle" class="small">MLflow and models</text>
+  <rect x="740" y="558" width="170" height="38" class="chip"/>
+  <text x="825" y="582" text-anchor="middle" class="small">RAG and embeddings</text>
+  <rect x="930" y="558" width="170" height="38" class="chip"/>
+  <text x="1015" y="582" text-anchor="middle" class="small">LangGraph agents</text>
+  <rect x="1120" y="558" width="170" height="38" class="chip"/>
+  <text x="1205" y="582" text-anchor="middle" class="small">LLM eval and feedback</text>
+
+  <rect x="80" y="670" width="1440" height="116" class="layer" fill="#f1f5f9"/>
+  <rect x="80" y="670" width="180" height="36" class="band"/>
+  <text x="170" y="695" text-anchor="middle" class="label">Data Layer</text>
+  <text x="300" y="707" class="body">PostgreSQL, pgvector, DuckDB, object storage, datasets, documents, embeddings</text>
+  <rect x="300" y="728" width="160" height="38" class="chip"/>
+  <text x="380" y="752" text-anchor="middle" class="small">Warehouse</text>
+  <rect x="480" y="728" width="160" height="38" class="chip"/>
+  <text x="560" y="752" text-anchor="middle" class="small">Vector search</text>
+  <rect x="660" y="728" width="160" height="38" class="chip"/>
+  <text x="740" y="752" text-anchor="middle" class="small">Raw files</text>
+  <rect x="840" y="728" width="160" height="38" class="chip"/>
+  <text x="920" y="752" text-anchor="middle" class="small">Dataset versions</text>
+  <rect x="1020" y="728" width="160" height="38" class="chip"/>
+  <text x="1100" y="752" text-anchor="middle" class="small">Document chunks</text>
+
+  <rect x="80" y="810" width="1440" height="66" class="layer" fill="#f8fafc"/>
+  <rect x="80" y="810" width="220" height="36" class="band"/>
+  <text x="190" y="835" text-anchor="middle" class="label">Operations Layer</text>
+  <text x="340" y="847" class="body">OpenTelemetry, Prometheus, Grafana, MLflow, Redis, Kafka, Azure, cost and security controls</text>
+
+  <line x1="800" y1="202" x2="800" y2="230" class="line"/>
+  <line x1="800" y1="322" x2="800" y2="350" class="line"/>
+  <line x1="800" y1="466" x2="800" y2="500" class="line"/>
+  <line x1="800" y1="646" x2="800" y2="670" class="line"/>
+  <line x1="800" y1="776" x2="800" y2="810" class="line"/>
+
+  <text x="800" y="890" text-anchor="middle" class="subtitle">Each layer is isolated in code, but integrated through typed APIs, events, and shared governance controls.</text>
+</svg>

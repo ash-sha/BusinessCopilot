@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="360" viewBox="0 0 1600 360" role="img" aria-label="Survival analysis workflow">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 16; ry: 16; }
+      .box2 { fill: #eff6ff; stroke: #1d4ed8; stroke-width: 2; rx: 16; ry: 16; }
+      .label { font: 600 20px Arial, sans-serif; fill: #0f172a; }
+      .sub { font: 14px Arial, sans-serif; fill: #334155; }
+      .arrow { stroke: #334155; stroke-width: 4; fill: none; marker-end: url(#arrowHead); }
+    </style>
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1600" height="360"/>
+
+  <rect class="box" x="40" y="110" width="220" height="120"/>
+  <text class="label" x="150" y="148" text-anchor="middle">Event Table</text>
+  <text class="sub" x="150" y="175" text-anchor="middle">start, stop, event flag</text>
+  <text class="sub" x="150" y="196" text-anchor="middle">censored rows kept</text>
+
+  <rect class="box" x="300" y="110" width="220" height="120"/>
+  <text class="label" x="410" y="148" text-anchor="middle">Observation</text>
+  <text class="sub" x="410" y="175" text-anchor="middle">features from history</text>
+  <text class="sub" x="410" y="196" text-anchor="middle">time-safe feature build</text>
+
+  <rect class="box2" x="560" y="110" width="220" height="120"/>
+  <text class="label" x="670" y="148" text-anchor="middle">Survival Model</text>
+  <text class="sub" x="670" y="175" text-anchor="middle">Kaplan-Meier / Cox</text>
+  <text class="sub" x="670" y="196" text-anchor="middle">risk + survival curves</text>
+
+  <rect class="box" x="820" y="110" width="220" height="120"/>
+  <text class="label" x="930" y="148" text-anchor="middle">Evaluation</text>
+  <text class="sub" x="930" y="175" text-anchor="middle">C-index, Brier score</text>
+  <text class="sub" x="930" y="196" text-anchor="middle">calibration checks</text>
+
+  <rect class="box" x="1080" y="110" width="220" height="120"/>
+  <text class="label" x="1190" y="148" text-anchor="middle">Risk Output</text>
+  <text class="sub" x="1190" y="175" text-anchor="middle">priority list / bands</text>
+  <text class="sub" x="1190" y="196" text-anchor="middle">time-to-event view</text>
+
+  <rect class="box" x="1340" y="110" width="220" height="120"/>
+  <text class="label" x="1450" y="148" text-anchor="middle">Action Layer</text>
+  <text class="sub" x="1450" y="175" text-anchor="middle">campaign, alert, review</text>
+  <text class="sub" x="1450" y="196" text-anchor="middle">intervention workflow</text>
+
+  <path class="arrow" d="M260 170 L300 170"/>
+  <path class="arrow" d="M520 170 L560 170"/>
+  <path class="arrow" d="M780 170 L820 170"/>
+  <path class="arrow" d="M1040 170 L1080 170"/>
+  <path class="arrow" d="M1300 170 L1340 170"/>
+</svg>
